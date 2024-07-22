@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Followers/Following Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <h1>GitHub Followers/Following Comparison</h1>
+        <p class="description">
+            If you follow a lot of other people on GitHub, you may find that some of them follow you back, but sometimes, they don't and that is sad. This little tool uses the GitHub API to look at your GitHub username and find discrepancies between who follows and who is followed. Then, if you wish, you can choose to rightsize those numbers...
+        </p>
+        <form id="github-form" class="centered-form">
+            <label for="username">GitHub Username:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Compare</button>
+        </form>
+        <p class="note">
+            Note: It is normal to have discrepancies if you follow big projects or famous coding stars. However, for smaller accounts, there are fewer reasons for the follower/following count to be off-balance.
+        </p>
+        <div id="results">
+            <h2>Results</h2>
+            <div class="stats">
+                <p id="followed-count">The number of users Followed = 0</p>
+                <p id="following-count">The number of users Following = 0</p>
+                <p id="delta-count">The delta is 0</p>
+            </div>
+            <div id="not-following-back">
+                <h3>Not Following Back</h3>
+                <ul></ul>
+            </div>
+            <div id="not-followed-back">
+                <h3>Not Followed Back</h3>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-row top-row">
+            <a href="https://david-dickinson.com" target="_blank" class="footer-link">by David Dickinson</a>
+        </div>
+        <div class="footer-row bottom-row">
+            <a href="https://www.linkedin.com/in/david-dickinson-b3704731" target="_blank" class="social-icon">
+                <img src="linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://twitter.com/oneMore_David" target="_blank" class="social-icon">
+                <img src="x.svg" alt="X">
+            </a>
+            <a href="https://github.com/rnddave" target="_blank" class="social-icon">
+                <img src="github.svg" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

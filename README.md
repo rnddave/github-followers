@@ -1,2 +1,10 @@
-# github-followers
-If you follow a lot of other people on GitHub, you may find that some of them follow you back, but sometimes, they don't and that is sad. This little tool uses the GitHub API to look at your GitHub username and find discrepancies between who follows and who is followed. 
+# GitHub Followers/Following Comparison Tool
+
+A simple web application that uses the GitHub API to compare the followers and following lists of a GitHub user and highlights discrepancies between them. This tool helps you identify users who follow you but you don't follow back, and vice versa.
+
+## Features
+
+- **Compare Followers and Following**: Enter your GitHub username to see who follows you and who you follow.
+- **Identify Discrepancies**: Easily identify users who don't follow you back and users you don't follow back.
+- **Visual Statistics**: View the total number of followers, following, and the delta between them.
+- **Responsive Design**: A clean, modern, and responsive design that works well on all devices.
